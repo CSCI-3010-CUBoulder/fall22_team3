@@ -18,13 +18,33 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // divides an input integer by 2 until it is impossible to do so, then returns the final number.
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
-int RemoveTwos(int original);
+int RemoveTwos(int original){
+        while(original % 2 == 0){
+        original = original % 2;
+    }
+    return original;
+}
 
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 
 // returns a vector with true for even numbers and false for odd numbers
-std::vector<bool> EvenMask(std::vector<int>);
+std::vector<bool> EvenMask(std::vector<int>){
+        vector<bool> oddeven;
+    for(int i = 0; i < v.size(); i++){
+        if(v[i] % 2 == 0){
+            oddeven.push_back(true);
+        } else {
+            oddeven.push_back(false);
+        }
+    }
+    // cout<< "Odd Even Vector: {" << endl;
+    // for(int i = 0; i < oddeven.size(); i++){
+    //     cout<< oddeven[i] << " ";
+    // }
+    // cout << " }" << endl;
+    return oddeven;
+}
 
 // returns a vector with true for odd numbers and false for even numbers
 std::vector<bool> OddMask(std::vector<int>);
