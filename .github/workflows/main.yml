@@ -1,4 +1,4 @@
-name: catch2
+name: catch
 
 on:
   push:
