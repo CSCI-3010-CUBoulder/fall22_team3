@@ -11,4 +11,4 @@ clean:
 	rm test
 
 test: test.cpp functions_to_implement.cpp catch.hpp
-	$(CXX) $(CXXFLAGS) test.cpp functions_to_implement.cpp catch2.hpp -o test
+	$(CXX) $(CXXFLAGS) test.cpp functions_to_implement.cpp catch.hpp -o test
