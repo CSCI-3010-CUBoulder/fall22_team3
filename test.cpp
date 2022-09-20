@@ -2,7 +2,7 @@
 #include "functions_to_implement.cpp"
 #include <iostream>
 #include <vector>
-#include "catch2.hpp" // downloaded from GitHub repo linked above
+#include "catch.hpp" // downloaded from GitHub repo linked above
 
 TEST_CASE ("test")
 {
