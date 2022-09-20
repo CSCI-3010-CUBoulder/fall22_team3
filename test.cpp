@@ -1,11 +1,8 @@
 #define CATCH_CONFIG_MAIN
 #include "functions_to_implement.cpp"
 #include <iostream>
-#include "catch.hpp"
 #include <vector>
-
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp" // downloaded from GitHub repo linked above
+#include "catch2.hpp" // downloaded from GitHub repo linked above
 
 TEST_CASE ("test")
 {
