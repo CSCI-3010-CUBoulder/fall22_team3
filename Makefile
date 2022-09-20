@@ -10,5 +10,5 @@ all: test
 clean:
 	rm test
 
-test: test.cpp functions_to_implement.cpp catch.hpp
-	$(CXX) $(CXXFLAGS) test.cpp functions_to_implement.cpp catch.hpp -o test
+test: test.cpp
+	$(CXX) $(CXXFLAGS) test.cpp -o test
